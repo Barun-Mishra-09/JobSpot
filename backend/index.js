@@ -26,7 +26,10 @@ app.use(cookieParser());
 
 // cors use
 const corsOptions = {
-  origin: "https://jobportal-3bym.onrender.com",
+  origin: [
+    "https://jobspot-ppa1.onrender.com",  // your frontend Render URL
+    "http://localhost:5173"               // for local testing (optional)
+  ],
   credentials: true,
 };
 app.use(cors(corsOptions));
