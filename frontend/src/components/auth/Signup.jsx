@@ -135,9 +135,10 @@ const Signup = () => {
     formData.append("phoneNumber", input.phoneNumber);
     formData.append("role", input.role);
 
-    if (input.file) {
-      formData.append("file", input.file);
-    }
+ if (input.file) {
+  formData.append("profilePhoto", input.file);
+}
+
 
     try {
       dispatch(setLoading(true));
