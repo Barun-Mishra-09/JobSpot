@@ -1,8 +1,8 @@
 export const USER_API_END_POINT =
-  "https://jobportal-3bym.onrender.com/api/v1/user";
+  "https://jobspot-ppa1.onrender.com/api/v1/user";
 export const JOB_API_END_POINT =
-  "https://jobportal-3bym.onrender.com/api/v1/job";
+  "https://jobspot-ppa1.onrender.com/api/v1/job";
 export const APPLICATION_API_END_POINT =
-  "https://jobportal-3bym.onrender.com/api/v1/application";
+  "https://jobspot-ppa1.onrender.com/api/v1/application";
 export const COMPANY_API_END_POINT =
-  "https://jobportal-3bym.onrender.com/api/v1/company";
+  "https://jobspot-ppa1.onrender.com/api/v1/company";
