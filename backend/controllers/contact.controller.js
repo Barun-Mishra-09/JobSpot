@@ -31,13 +31,18 @@ export const sendContactMessage = async (req, res) => {
     const savedMessage = await Contact.create({ name, email, message });
 
     // Nodemailer email to me(Admin)
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.ADMIN_EMAIL,
-        pass: process.env.ADMIN_PASS,
-      },
-    });
+ const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true, // Use TLS
+  auth: {
+    user: process.env.ADMIN_EMAIL,
+    pass: process.env.ADMIN_PASS, // Gmail App Password (NOT normal Gmail password)
+  },
+});
+
+
+
 
     await transporter.sendMail({
       from: process.env.ADMIN_EMAIL, // gmail requires you  email
