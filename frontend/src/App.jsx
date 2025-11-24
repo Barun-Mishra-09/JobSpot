@@ -237,7 +237,7 @@ const MainRouter = () => {
 
 const App = () => {
   return (
-    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId="557442000556-5cout4ctdgaji74goq808o57v2bl6o02.apps.googleusercontent.com">
       <MainRouter />
     </GoogleOAuthProvider>
   );
