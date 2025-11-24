@@ -5,6 +5,10 @@ export const sendContactMessage = async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
+ console.log("CONTACT BODY =>", req.body);
+    console.log("ADMIN_EMAIL:", process.env.ADMIN_EMAIL);
+    console.log("ADMIN_PASS defined:", !!process.env.ADMIN_PASS);
+    
     // validation
     if (!name || !email || !message) {
       return res.status(400).json({
